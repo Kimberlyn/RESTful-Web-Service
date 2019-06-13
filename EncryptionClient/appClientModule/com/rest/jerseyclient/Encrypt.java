@@ -4,7 +4,7 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
-public class Yee_Encript {    
+public class Encrypt {    
   protected String getTbstoCupsResponse(String retrievedText) {
     String output = null;
     String output2 = null;
