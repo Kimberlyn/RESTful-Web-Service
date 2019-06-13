@@ -12,7 +12,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class Yee_A3_Encription_Client_ extends Application {
+public class Encryption_Client_ extends Application {
     TextField textField,resultField;
     Label text, clicked,messageEnteredL,resultL;
     Button button, clickButton,buttonEncrypt,buttonDecrypt;
@@ -59,8 +59,8 @@ public class Yee_A3_Encription_Client_ extends Application {
     	String sendToServer="encrypt,";
     	sendToServer+=retrievedText;
         textField.setText("");
-        Yee_Encript encriptor=new Yee_Encript();
-        String result=encriptor.getTbstoCupsResponse(sendToServer);
+        Encrypt encriptor=new Encrypt();
+        String result=encryptor.getTbstoCupsResponse(sendToServer);
         resultField.setText(""+result);
       
     	
@@ -73,7 +73,7 @@ public class Yee_A3_Encription_Client_ extends Application {
     	String sendToServer="decrypt,";
     	sendToServer+=retrievedText;
         textField.setText("");
-        Yee_Encript encriptor=new Yee_Encript();
+        Encrypt encryptor=new Encrypt();
         String result=encriptor.getTbstoCupsResponse(sendToServer);
         resultField.setText(""+result);
     	
