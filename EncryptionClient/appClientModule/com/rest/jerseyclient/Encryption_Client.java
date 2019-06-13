@@ -12,7 +12,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class Encryption_Client_ extends Application {
+public class Encryption_Client extends Application {
     TextField textField,resultField;
     Label text, clicked,messageEnteredL,resultL;
     Button button, clickButton,buttonEncrypt,buttonDecrypt;
